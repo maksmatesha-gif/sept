@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a110e">
+  <title>ГИДРОКОНТУР — канализация, дренаж и вода под ключ</title>
+  <meta name="description" content="Наружная и внутренняя канализация, септики из бетонных колец, станции биологической очистки, дренаж, ливневка, скважины, вода в дом и полив. Свой мини-экскаватор 3,5 т.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <canvas id="flow-canvas" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <a class="logo" href="#top" aria-label="Гидроконтур">
+      <span class="logo-mark"><i></i></span>
+      <span>ГИДРО<span>КОНТУР</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Основная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#septic">Септик</a>
+      <a href="#tech">Техника</a>
+      <a href="#process">Этапы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-social" href="https://t.me/mp29110" target="_blank" rel="noopener" aria-label="Telegram">TG</a>
+      <a class="nav-cta" href="#contact">Обсудить объект <span>↗</span></a>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="kicker"><span></span>Инженерные системы участка</div>
+          <div class="hero-tag">Частный дом · коттедж · дача</div>
+          <h1>Вода.<br><em>Канализация.</em><br>Без лишних забот.</h1>
+          <p class="lead">Проектируем и монтируем инженерные системы участка под ключ: от траншеи и септика до воды в доме, дренажа и уличного полива.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Получить расчёт <span>↗</span></a>
+            <a class="btn btn-ghost" href="#services">Смотреть услуги</a>
+          </div>
+          <div class="hero-proof">
+            <div><b>3,5 т</b><span>свой мини-экскаватор</span></div>
+            <div><b>40 / 60 / 120</b><span>ширина ковшей, см</span></div>
+            <div><b>под ключ</b><span>одна команда на объекте</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image">
+            <img src="images/hero.jpg" alt="Монтаж инженерных сетей на загородном участке">
+          </div>
+          <div class="floating-card floating-card--top">
+            <span class="status-dot"></span>
+            <div><b>Работаем комплексно</b><small>канализация · вода · дренаж</small></div>
+          </div>
+          <div class="floating-card floating-card--bottom">
+            <span class="mini-number">01</span>
+            <div><b>От котлована</b><small>до готовой системы</small></div>
+          </div>
+          <div class="hero-orbit" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>Септики ЖБИ</span><i>•</i><span>Топас</span><i>•</i><span>Юнилос</span><i>•</i><span>Чистовод</span><i>•</i><span>KANN</span><i>•</i><span>Дренаж</span><i>•</i><span>Ливневка</span><i>•</i><span>Скважины</span><i>•</i><span>Полив</span><i>•</i>
+          <span>Септики ЖБИ</span><i>•</i><span>Топас</span><i>•</i><span>Юнилос</span><i>•</i><span>Чистовод</span><i>•</i><span>KANN</span><i>•</i><span>Дренаж</span><i>•</i><span>Ливневка</span><i>•</i><span>Скважины</span><i>•</i><span>Полив</span><i>•</i>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services-section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><div class="kicker"><span></span>Что делаем</div><h2>Инженерия<br><em>участка целиком.</em></h2></div>
+          <p>Берём на себя земляные работы, монтаж, подключение и пуск. Вам не нужно собирать нескольких подрядчиков для одного объекта.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card service-card--large reveal">
+            <div class="service-media"><img src="images/septic-rings.jpg" alt="Септик из бетонных колец"><span class="service-index">01</span></div>
+            <div class="service-body"><div><h3>Септик из<br>бетонных колец</h3><p>Котлован, монтаж ЖБИ, трубы от дома, ревизионные и поворотные колодцы, герметизация и обратная засыпка.</p></div><a href="#septic" aria-label="Подробнее о септике">↗</a></div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-media"><img src="images/bio.jpg" alt="Станция биологической очистки"><span class="service-index">02</span></div>
+            <div class="service-body"><div><h3>Станции<br>очистки</h3><p>Чистовод, Юнилос, Топас, KANN и другие решения под условия участка.</p></div><a href="#contact" aria-label="Обсудить станцию">↗</a></div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-media"><img src="images/storm.jpg" alt="Ливневая канализация"><span class="service-index">03</span></div>
+            <div class="service-body"><div><h3>Ливневка<br>и водоотвод</h3><p>Приёмные коробки, лотки, трапы, трубы и организованный отвод воды.</p></div><a href="#contact" aria-label="Обсудить ливневку">↗</a></div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-media"><img src="images/drainage.jpg" alt="Дренаж вокруг дома"><span class="service-index">04</span></div>
+            <div class="service-body"><div><h3>Дренаж<br>участка</h3><p>Дренаж дома или территории, ревизионные и поворотные колодцы.</p></div><a href="#contact" aria-label="Обсудить дренаж">↗</a></div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-media"><img src="images/caisson.jpg" alt="Кессон и обвязка скважины"><span class="service-index">05</span></div>
+            <div class="service-body"><div><h3>Скважина<br>и вода в дом</h3><p>Кессон, насос, гидроаккумулятор, автоматика и ввод воды в дом.</p></div><a href="#contact" aria-label="Обсудить скважину">↗</a></div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-media"><img src="images/plumbing.jpg" alt="Внутренняя сантехника"><span class="service-index">06</span></div>
+            <div class="service-body"><div><h3>Внутренняя<br>сантехника</h3><p>Разводка по точкам, полипропилен, фильтры, арматура и сантехнические приборы.</p></div><a href="#contact" aria-label="Обсудить сантехнику">↗</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="septic" class="section septic-section">
+      <div class="wrap septic-grid">
+        <div class="septic-visual reveal">
+          <img src="images/well.jpg" alt="Колодец и инженерные сети">
+          <div class="septic-ring ring-a"></div><div class="septic-ring ring-b"></div><div class="septic-ring ring-c"></div>
+          <div class="image-caption"><span>ЖБИ</span><b>Надёжная классика<br>для частного дома</b></div>
+        </div>
+        <div class="septic-copy reveal">
+          <div class="kicker"><span></span>Отдельно о ЖБИ</div>
+          <h2>Септик из бетонных колец — <em>когда важна простота.</em></h2>
+          <p class="lead">Решение с понятной конструкцией и доступной стоимостью материалов. Подбираем схему с учётом грунта, уклонов, объёма стоков и особенностей участка.</p>
+          <div class="feature-list">
+            <div><span>01</span><div><b>Доступная конструкция</b><p>Материалы широко доступны, а сама система понятна в обслуживании.</p></div></div>
+            <div><span>02</span><div><b>Прочность ЖБИ</b><p>Бетонные элементы рассчитаны на значительные нагрузки при корректном монтаже.</p></div></div>
+            <div><span>03</span><div><b>Монтаж под ключ</b><p>От котлована и колец до труб, колодцев, уплотнения и обратной засыпки.</p></div></div>
+          </div>
+          <div class="honest-note"><span>Важно</span><p>Конструкция тяжёлая — для монтажа требуется техника или малая механизация. У нас есть собственный мини-экскаватор 3,5 т.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech" class="section tech-section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><div class="kicker"><span></span>Собственная техника</div><h2>Копаем точно.<br><em>Не переплачиваем за аренду.</em></h2></div>
+          <p>Свой мини-экскаватор 3,5 тонны позволяет оперативно выполнять траншеи, котлованы и планировку участка.</p>
+        </div>
+        <div class="tech-layout">
+          <div class="tech-photo reveal"><img src="images/excavator.jpg" alt="Мини-экскаватор 3,5 тонны"><div class="tech-label"><b>3.5</b><span>TON</span></div></div>
+          <div class="bucket-list">
+            <div class="bucket reveal"><span class="bucket-no">01</span><b>40 <small>см</small></b><span class="bucket-text">Траншеи под трубы<br>и инженерные сети</span><span class="arrow">↗</span></div>
+            <div class="bucket reveal"><span class="bucket-no">02</span><b>60 <small>см</small></b><span class="bucket-text">Котлованы<br>и глубокие траншеи</span><span class="arrow">↗</span></div>
+            <div class="bucket reveal"><span class="bucket-no">03</span><b>120 <small>см</small></b><span class="bucket-text">Планировка<br>и загрузка машин</span><span class="arrow">↗</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section detail-section">
+      <div class="wrap detail-grid">
+        <div class="detail-copy reveal">
+          <div class="kicker"><span></span>Внутри дома и на участке</div>
+          <h2>Собираем систему<br><em>до последней точки.</em></h2>
+          <p class="lead">Прокладываем трубу от дома до септика, выполняем внутреннюю разводку под сантехнические приборы, заводим воду в дом и делаем уличный полив с подготовкой к зиме.</p>
+          <div class="check-grid">
+            <span>✓ Умывальник</span><span>✓ Душ</span><span>✓ Унитаз</span><span>✓ Ванна</span><span>✓ Стиральная машина</span><span>✓ Мойка</span><span>✓ Трап</span><span>✓ Фильтры и арматура</span>
+          </div>
+          <a class="text-link" href="#contact">Обсудить комплектацию <span>↗</span></a>
+        </div>
+        <div class="detail-stack reveal">
+          <article><img src="images/irrigation.jpg" alt="Уличный полив"><div><span>01</span><b>Уличный полив</b><p>С возможностью отключения и слива на зиму.</p></div></article>
+          <article><img src="images/drainage.jpg" alt="Уплотнение грунта"><div><span>02</span><b>Грунт и фундамент</b><p>Уплотнение внутри фундамента виброплитой.</p></div></article>
+          <article><img src="images/plumbing.jpg" alt="Сантехническая разводка"><div><span>03</span><b>Сантехнические работы</b><p>Пайка, фильтры, арматура и установка приборов.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section process-section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><div class="kicker"><span></span>Понятный процесс</div><h2>От участка<br><em>до готовой системы.</em></h2></div>
+          <p>Сначала разбираемся в задаче и условиях. Затем выполняем монтаж последовательно, без хаоса из разных подрядчиков.</p>
+        </div>
+        <div class="process-grid">
+          <article class="step reveal"><span>01</span><h3>Выезд</h3><p>Осматриваем участок, грунт, уклоны и точки подключения. Определяем оптимальную схему.</p></article>
+          <article class="step reveal"><span>02</span><h3>Подготовка</h3><p>Размечаем трассы и котлованы. Подбираем технику, материалы и оборудование.</p></article>
+          <article class="step reveal"><span>03</span><h3>Монтаж</h3><p>Выполняем земляные работы, укладываем трубы, устанавливаем оборудование и колодцы.</p></article>
+          <article class="step reveal"><span>04</span><h3>Проверка</h3><p>Проверяем уклоны, соединения, пролив и работу системы. Передаём объект заказчику.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="wrap">
+        <div class="contact-shell reveal">
+          <div class="contact-info">
+            <div class="kicker"><span></span>Обсудим ваш объект</div>
+            <h2>Расскажите,<br><em>что нужно сделать.</em></h2>
+            <p>Напишите в мессенджер или оставьте заявку. Подскажем по схеме работ, технике и комплектации.</p>
+            <div class="contact-links">
+              <a href="https://t.me/mp29110" target="_blank" rel="noopener"><span>TG</span><div><small>Telegram</small><b>@mp29110</b></div><i>↗</i></a>
+              <a href="https://instagram.com/mp29110" target="_blank" rel="noopener"><span>IG</span><div><small>Instagram</small><b>@mp29110</b></div><i>↗</i></a>
+            </div>
+          </div>
+          <form id="lead-form">
+            <div class="form-head"><span>01 — Заявка</span><b>Ответим по вашему объекту</b></div>
+            <label><span>Ваше имя</span><input name="name" required placeholder="Как к вам обращаться?" autocomplete="name"></label>
+            <label><span>Телефон</span><input name="phone" required placeholder="+375 (__) ___-__-__" autocomplete="tel"></label>
+            <label><span>Что требуется</span><select name="work">
+              <option>Септик из бетонных колец</option><option>Станция биологической очистки</option><option>Ливневая канализация</option><option>Дренаж участка</option><option>Скважина / вода в дом</option><option>Уличный полив</option><option>Внутренняя сантехника</option><option>Комплекс работ</option>
+            </select></label>
+            <label><span>Коротко об объекте</span><textarea name="msg" placeholder="Город / населённый пункт, площадь или длина трассы, что уже есть на участке..."></textarea></label>
+            <button class="btn btn-primary btn-submit" type="submit">Отправить заявку <span>↗</span></button>
+            <div class="form-ok" role="status">Готово. Заявка сохранена в браузере. Для реальной отправки подключите Telegram/email-обработчик.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <a class="logo" href="#top"><span class="logo-mark"><i></i></span><span>ГИДРО<span>КОНТУР</span></span></a>
+    <div>Канализация · вода · дренаж · инженерия участка</div>
+    <div>© <span id="year"></span> Гидроконтур</div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
